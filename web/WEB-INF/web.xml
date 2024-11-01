@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="6.0" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd">
+    <servlet>
+        <servlet-name>Demo</servlet-name>
+        <servlet-class>com.sistemaminitores.presentacion.MonitorControl</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>MainController</servlet-name>
+        <servlet-class>com.microresenas.control.MainController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ReviewController</servlet-name>
+        <servlet-class>com.microresenas.control.ReviewController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Demo</servlet-name>
+        <url-pattern>/Demo</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>MainController</servlet-name>
+        <url-pattern>/MainController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ReviewController</servlet-name>
+        <url-pattern>/ReviewController</url-pattern>
+    </servlet-mapping>
+</web-app>

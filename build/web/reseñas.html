@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Reseña</title>
+</head>
+<body>
+    <h2>Dejar una Reseña</h2>
+    <form action="MainController" method="POST">
+        <label for="monitorId">ID del Monitor:</label>
+        <input type="number" id="monitorId" name="monitorId" required><br><br>
+
+        <label for="estudianteId">ID del Estudiante:</label>
+        <input type="number" id="estudianteId" name="estudianteId" required><br><br>
+
+        <label for="comentario">Comentario:</label><br>
+        <textarea id="comentario" name="comentario" rows="4" cols="50" required></textarea><br><br>
+
+        <label for="calificacion">Calificación (1-5):</label>
+        <input type="number" id="calificacion" name="calificacion" min="1" max="5" required><br><br>
+
+        <label for="fecha">Fecha:</label>
+        <input type="date" id="fecha" name="fecha" required><br><br>
+
+        <input type="submit" value="Enviar Reseña">
+    </form>
+</body>
+</html>

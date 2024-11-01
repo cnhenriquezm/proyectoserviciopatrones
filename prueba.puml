@@ -1,0 +1,21 @@
+@startuml
+class ch.Demo
+class jakarta.servlet.ServletException
+class jakarta.servlet.http.HttpServlet
+class jakarta.servlet.http.HttpServletRequest
+class jakarta.servlet.http.HttpServletResponse
+class java.io.IOException
+class java.io.PrintWriter
+class java.sql.Connection
+class java.sql.DriverManager
+class java.sql.PreparedStatement
+ch.Demo ..> jakarta.servlet.ServletException
+ch.Demo --|> jakarta.servlet.http.HttpServlet
+ch.Demo ..> jakarta.servlet.http.HttpServletRequest
+ch.Demo ..> jakarta.servlet.http.HttpServletResponse
+ch.Demo ..> java.io.IOException
+ch.Demo ..> java.io.PrintWriter
+ch.Demo ..> java.sql.Connection
+ch.Demo ..> java.sql.DriverManager
+ch.Demo ..> java.sql.PreparedStatement
+@enduml
